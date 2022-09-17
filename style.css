@@ -1,0 +1,433 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.btn {
+    position: relative;
+    left: -100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: rgb(0, 0, 47);
+    width: 25vw;
+    height: 100vh;
+}
+
+.profile.active {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 55%;
+    transition: 1s;
+    height: 100vh;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.img1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    background-color: rgb(50, 50, 112);
+    justify-content: center;
+    align-items: center; 
+    padding: 16px 70px 0 10px ;
+}
+
+.dot-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.dot{
+    margin-top: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(5, 249, 5);
+    border-radius: 50%;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color:rgb(5, 249, 5);
+}
+
+h3{
+    color: white;
+}
+
+h4 {
+    padding: 16px;
+    color: white;
+    padding-left: 3em;
+    border-bottom: 2px solid red;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+div.options::-webkit-scrollbar {
+    width: 5px;
+  }
+
+div.options::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+div.options::-webkit-scrollbar-thumb {
+    background: rgb(24, 165, 24); 
+  }
+  
+div.options::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.option {
+    padding: 16px;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    color: white;
+    text-align: start;
+    margin-left: 4.5vw;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    position: absolute;
+    left: 25%;
+    z-index:-1;
+}
+
+.dashboard.active {
+    position: relative;
+    top: -100%;
+    right: -100%;
+    overflow-x: auto;
+    height: 100vh;
+    z-index:1;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-pluto {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    color: white;
+}
+
+h2 {
+    margin-top: 9px;
+}
+
+.icon1 {
+    font-size: 3rem;
+    color: orange;
+    padding-top: 4px;
+}
+.icon {
+    padding-top: 10px;
+}
+
+.nots {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background-color: red;
+    right: 6px;
+    top: 7px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-nots {
+    display: flex;
+    flex-direction: row;
+}
+
+.pluto {
+    padding: 5px 50px ;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 50, 112);
+}
+
+.id{
+    display: flex;
+    flex-direction: row;
+    width: 18vw;
+    color: white;
+    background-color: rgb(255, 68, 0);
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 6px 10px;
+}
+
+.icons {
+    display:flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.dash {
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 10px 10px 65px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.numbers,.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.num {
+    background-color: #cccccc;
+    box-shadow: 30px;
+    width: 15em;
+    height: 15em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.s-media {
+    background-color: #cccccc;
+    box-shadow: 3px;
+    width: 15em;
+    height: 10em;
+    border-radius: 10px;
+}
+
+.icon2 {
+    font-size: 4rem;
+    color: orangered;
+}
+.icon3 {
+    font-size: 4rem;
+    color: rgb(53, 53, 239);
+}
+.icon4 {
+    font-size: 4rem;
+    color: darkgreen;
+}.icon5 {
+    font-size: 4rem;
+    color: rgb(255, 23, 23);
+}
+
+p,b {
+    color: rgb(122, 122, 122);
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.media-icon1,.media-icon2,.media-icon3,.media-icon4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.media-text {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon6 {
+    font-size: 4.2rem;
+    color: white;
+}
+
+.icon7 {
+    font-size: 4rem;
+    color: white;
+}
+
+.media-icon1 {
+    background-color: #4646c0;
+}
+
+.media-icon2 {
+    background-color: #00a1ff;
+}
+.media-icon3 {
+    background-color: #1a6be0;
+
+}.media-icon4 {
+    background-color: #d84d4d;
+}
+
+@media only screen and (max-width:900px) {
+    .detail {
+        padding: 10px 14px;
+    }
+    .name h3 {
+        font-size: 15px;
+    }
+    .dot {
+        width: 6px;
+        height: 6px;
+        
+    }
+    .dot-div span {
+        font-size: 18px;
+    }
+    .man {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+@media only screen and (max-width:550px) {
+    .btn {
+        position: absolute;
+        top: 59.7px;
+        left: 0px;
+    } 
+
+    button {
+        background-color: orangered;
+        outline: none;
+        border: none;
+        padding: 2px 2px;
+        width: 42px;
+        height: 50px;
+    }
+    .span1 {
+        color: white;
+    }
+    .nots2 {
+        margin-right: 10px;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        background-color: rgb(0, 0, 47);
+        width: 25vw;
+        height: 100vh;
+        position: relative;
+        left: -100%;
+    }
+    .dashboard {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+    }
+    .pluto {
+        padding: 3px 10px ;
+        column-gap: 65px;
+        width: auto;
+    }
+    .icon1{
+        font-size: 3.1rem;
+    }
+    h2{
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    h3{
+        position: absolute;
+        left: -100%;
+    }
+    .icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    }
+    .id {
+        padding: 10px 30px;
+        width: 25vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
